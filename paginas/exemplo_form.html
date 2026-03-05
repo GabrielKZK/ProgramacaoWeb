@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="pos" enctype="multipart/form-data">
+        <input type="file" name="upload" id="upload" accept=".pdf" multiple>
+    </form>
+    <br>
+    <hr>
+    <form action="#" method="get">
+        <div >
+            <label for="txtNome">Nome</label>
+            <input type="text" name="nome" id="txtNome" placeholder="Digite seu nome">
+        </div>
+        <div >
+            <label for="txtSenha">Senha</label>
+            <input required type="password" name="senha" id="txtSenha" placeholder="Digite sua senha">
+        </div>    
+        <hr>    
+        <div>
+            <label for="rdTurnoManha">Turno</label>
+            <input type="radio" name="rdTurno" id="rdTurnoManha" value="M">Matutino <br>
+            <input type="radio" name="rdTurno" id="rdTurnoTarde" value="T">Vespertino <br>
+            <input type="radio" name="rdTurno" id="rdTurnoNoite" value="N" checked>Noturno 
+        </div>
+        <hr>
+        <div>
+            <label for="ckDiaSemana">Dias da semana</label><br>
+            <input type="checkbox" name="ckDiaSemana" id="ckMat" value="SEG">Segunda <br>
+            <input type="checkbox" name="ckDiaSemana" id="ckTer" value="TER">Terça <br>
+            <input type="checkbox" name="ckDiaSemana" id="ckQua" value="QUA">Quarta <br>
+            <input type="checkbox" name="ckDiaSemana" id="ckQui" value="QUI">Quinta <br>
+            <input type="checkbox" name="ckDiaSemana" id="ckSex" value="SEX">Sexta <br>
+            <input type="checkbox" name="ckDiaSemana" id="ckSab" value="SAB">Sábado <br>
+            <input type="checkbox" name="ckDiaSemana" id="ckDom" value="DOM">Domingo <br>
+        </div>
+        <hr>
+        <div>
+            <label for="dtNasc">Data de Nascimento</label>
+            <input type="date" name="dtNasc" id="dtNasc">
+        </div>
+        <div>
+            <label for="nrIdade">idade</label>
+            <input autofocus type="number" name="nrIdade" id="nrIdade" min="12" max="100" >
+        </div>
+        <div>
+            <label for="nrEmail">Email</label>
+            <input type="email" name="nrEmail" id="nrEmail" placeholder="Digite seu email">
+        </div>
+        <hr>
+        <div>
+            <label for="rgSatisfacao">Satisfação</label>
+            <input type="range" name="rgSatisfacao" id="rgSatisfacao" min="10" max="50" step="2">
+        </div>
+        <div>
+            <label for="color">Cor</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="slcEstado">Estado</label>
+            <select name="slcEstado" id="slcEstado">
+                <option value="">Selecione</option>
+                <option value="SP" selected>São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+        </div>
+        <div>
+            <textarea name="LinhasColunas" id="LinhasColunas" ></textarea>
+        </div>
+        
+        </select>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+        
+    </form>
+    
+</body>
+</html>
