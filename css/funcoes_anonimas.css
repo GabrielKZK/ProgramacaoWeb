@@ -1,0 +1,9 @@
+.li {
+    background-color: #daf08c;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}

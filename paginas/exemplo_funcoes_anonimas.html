@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções anônimas + DOM</title>
+    <script src="../scripts/funcoes_anonima.js"></script>
+</head>
+<body>
+
+    <h2>Parte 1 - Eventos</h2>
+
+    <label for="txtV1">Valor</label>
+    <input type="text" id="txtV1" name="txtV1" onkeydown="capturarTecla(event)">
+    
+    <button id="btRegistrar" onclick="registrar()">Registrar</button>
+    <br><br>
+    <button id="btExecutar">Executar</button>
+
+    <p id="mensagem"></p>
+
+    <hr>
+
+    <h2>Parte 2 - DOM</h2>
+
+    <h1 id="titulo">Título Principal</h1>
+
+    <p class="paragrafo">Este é o primeiro parágrafo.</p>
+    <p class="paragrafo">Este é o segundo parágrafo.</p>
+    <p class="paragrafo">Este é o terceiro parágrafo.</p>
+
+    <button onclick="alterarConteudo()">Clique aqui</button>
+
+    <hr>
+
+    <h2>Parte 3 - DOM</h2>
+    <ul id="lista">
+        <li>Item 1 <button onclick="removerItem(this)">Remover</button></li>
+        <li>Item 2 <button onclick="removerItem(this)">Remover</button></li>
+        <li>Item 3 <button onclick="removerItem(this)">Remover</button></li>
+    </ul>
+
+</body>
+</html>
